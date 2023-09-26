@@ -6,9 +6,9 @@ public class JobTest {
     @Test
     public void testSettingJobId() {
         Job job1 = new Job();
-        job1.setId(1);
+        job1.setId(7);
 
-        assertEquals(1, job1.getId());
+        assertEquals(7, job1.getId());
     }
 
     @Test
