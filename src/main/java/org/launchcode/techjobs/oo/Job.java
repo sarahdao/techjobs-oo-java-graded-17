@@ -93,4 +93,15 @@ public class Job {
 
     public void setId(int i) {
     }
+    @Override
+    public String toString() {
+        return "\n" +
+                "ID: " + getId() + "\n" +
+                "Name: " + (getName() == null || getName().isEmpty() ? "Data not available" : getName()) + "\n" +
+                "Employer: " + (getEmployer() == null || getEmployer().getValue().isEmpty() ? "Data not available" : getEmployer().getValue()) + "\n" +
+                "Location: " + (getLocation() == null || getLocation().getValue().isEmpty() ? "Data not available" : getLocation().getValue()) + "\n" +
+                "Position Type: " + (getPositionType() == null || getPositionType().getValue().isEmpty() ? "Data not available" : getPositionType().getValue()) + "\n" +
+                "Core Competency: " + (getCoreCompetency() == null || getCoreCompetency().getValue().isEmpty() ? "Data not available" : getCoreCompetency().getValue()) + "\n";
+    }
 }
+
